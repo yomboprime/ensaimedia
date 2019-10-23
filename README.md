@@ -128,7 +128,7 @@ Este proceso convierte el vídeo raw a imágenes `.png` que ocupan otro tanto, y
 
 Al terminar se habrá creado el fichero `video.webm` en la subcarpeta de la sesión. Puedes entonces borrar el resto de ficheros. Puedes volver a crear el vídeo en cualquier momento si los ficheros `video.bin` y `audio.wav` están presentes (el fichero de audio es opcional)
 
-## Conexión del XZ-Uno al host
+## Conexión del ZX-Uno al host
 
 Hay tres conexiones por cable entre el host y la FPGA: Un cable microUSB para el vídeo, un puerto serie para periféricos y RTC, y el cable de audio analógico.
 
