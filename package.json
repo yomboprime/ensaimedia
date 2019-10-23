@@ -1,0 +1,27 @@
+{
+  "name": "ensaimedia",
+  "version": "1.0.0",
+  "keywords": [
+    "video",
+    "media",
+    "interface"
+  ],
+  "author": "yomboprime",
+  "contributors": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "mic-stream": "^1.0.2",
+    "pngjs": "^3.4.0",
+    "readable-stream": "^3.4.0",
+    "serialport": "^7.1.5",
+    "simple-peer": "^9.4.0",
+    "wrtc": "^0.4.1",
+    "ws": "^7.1.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "install": "./compile_fxpipe.sh"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}

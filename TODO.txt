@@ -1,0 +1,45 @@
+
+TESTS por hacer
+
+
+------
+
+IDEAS
+
+
+------
+
+BUGS
+
+- tecla bloqdespl se cuelga?
+
+------
+
+TODO cliente
+
+- Asignacion de player para los dos gamepads conectados
+
+- (baja prioridad) teclado y joystick en pantalla. el teclado diferentes versiones con imagen svg
+
+------
+
+
+TODO programa host
+
+- Captura: ajustar aspecto de cada frame al del tamaño del video (si son diferentes)
+
+------
+
+
+TODO Core
+
+- mirar si hay q poner timeout en los perifericos. al cambiar de core se puede interrumpir la comunicacion
+
+- implementar modo timex 512x192
+
+- uart esp
+
+- hacer version para 2M
+
+
+------

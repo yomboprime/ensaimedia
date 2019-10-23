@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ensaimedia-rescue)(type Legacy)(uri ${KIPRJMOD}/ensaimedia-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,29 @@
+
+BOM Ensaimedia 1.0
+
+Componentes principales:
+
+U1						CY7C68013A-56PVX
+C1, C2, C3, C4, C5		0.1 uF 0805 decoupling caps
+Y1						24 MHz crystal HC-49S
+C7, C8					12 pF caps 0805
+R1, R8					100 KOhm 0805
+R2, R3					2.2 KOhm 0805
+J1						MicroUSB Werth connector
+J10, J11, J12			10p 2.54mm male pin headers
+J2						2p 2.54mm female pin header
+J3						2p 2.54mm male pin header OR Switch
+
+
+EEPROM (opcional):
+
+U3						DS2431 1-Wire EEPROM
+R7						1 KOhm 0805
+
+
+Componentes del WiFi (opcional):
+
+U2						ESP-12E
+R4, R5, R6				10 KOhm 0805
+C6						0.1 uF 0805 decoupling cap
+J4						2p 2.54mm male pin header OR Switch

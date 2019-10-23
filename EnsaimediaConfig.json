@@ -1,0 +1,14 @@
+{
+	"listenPort": 8091,
+
+	"serialPortFilePath": "/dev/ttyUSB0",
+
+	"audioEnabled": true,
+	"audioDevice": "plughw:CARD=PCH,DEV=0",
+	"audioFramesPerSecond": 44100,
+	"audioStereo": true,
+
+	"saveVideoToDiskEnabled": false,
+	"saveAudioToDiskEnabled": false,
+	"saveToDiskPath": "./savedSessions/"
+}
