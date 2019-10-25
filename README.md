@@ -17,11 +17,11 @@ Actualmente sólo está disponible el core oficial de ZX-Uno para ZX Spectrum.
 
 El host debe ser un sistema Unix, debido a que se usa el programa [fx2pipe](https://www.triplespark.net/elec/periph/USB-FX2/software/fx2pipe.html) para la entrada de vídeo por USB. El cliente (o clientes) puede ser cualquier sistema con un navegador web moderno.
 
-- Ejecutar lo siguiente para instalar los requisitos previos:
+- Ejecuta lo siguiente para instalar los requisitos previos:
 
 `sudo apt install git npm libusb-dev build-essential`
 
-- Poner al usuario en el grupo dialout para poder acceder al puerto serie:
+- Pon a tu usuario en el grupo dialout para poder acceder al puerto serie:
 
 `sudo adduser <nombre_de_usuario> dialout`
 
@@ -29,9 +29,9 @@ El host debe ser un sistema Unix, debido a que se usa el programa [fx2pipe](http
 
 ## Instalación del software Ensaimedia
 
-Ir al directorio que se desea contenga el directorio de Ensaimedia.
+Ve al directorio que se desea contenga el directorio de Ensaimedia.
 
-Ejecutar:
+Ejecuta:
 
 ```
 git clone https://github.com/yomboprime/ensaimedia.git
@@ -112,9 +112,9 @@ En el menú verás algunas opciones visuales:
 
 Para activar la captura a disco, establece a `true` los valores `saveVideoToDiskEnabled` y/o `saveAudioToDiskEnabled` en el fichero de configuración `EnsaimediaConfig.json`.
 
-La captura se realiza en el host, los clientes del navegador no pueden afectar a ésta.
+La captura se realiza en el host, los clientes del navegador no pueden afectar a esta.
 
-La captura comenzará tan pronto como haya señal de vídeo, y la sesión se guardará en una carpeta nueva bajo `Ensaimedia/savedSessions/` como dos ficheros: `video.bin` con el vídeo en raw, y `audio.wav` con el audio. Estos ficheros continuarán creciendo mientras esté funcionando el programa, a un ritmo aproximado de 500 MB por minuto (para el core de ZX Spectrum con vídeo y audio)
+La captura comenzará tan pronto como haya señal de vídeo, y la sesión se guardará en una carpeta nueva bajo `Ensaimedia/savedSessions/` (con nombre dependiente de la fecha y hora) como dos ficheros: `video.bin` con el vídeo en raw, y `audio.wav` con el audio. Estos ficheros continuarán creciendo mientras esté funcionando el programa, a un ritmo aproximado de 500 MB por minuto (para el core de ZX Spectrum con vídeo y audio).
 
 Tras finalizar la sesión de Ensaimedia hay que postprocesar los datos raw para generar un vídeo comprimido webm "píxel perfect" que se pueda reproducir. Este proceso puede tardar 10 veces lo que dura el vídeo. Para ello:
 
@@ -192,10 +192,10 @@ Las señales de control del bus son (out es en dirección al host, in es en dire
 - SLCLK (out) Reloj del bus síncrono proporcionado por el core del ZX-Uno. Debe estar entre 5 y 48 MHz y ser estable.
 - SLWR (out) Señal de escritura (de un word de 16 bits) al bus (El ZX-Uno escribe)
 - SLRD (out) Señal de lectura desde el bus (El ZX-Uno lee) (*)
-- ADDR1 (out): Dirección específica del FX2LP (número de endpoint). Debe valer 1 para dirección de transmisión del ZX-Uno al host, y 0 para la dirección contraria.
 - AVAILABLE (in): Pin que indica que hay un word disponible para lectura para el ZX-Uno. (*)
 
-(*) Esta capacidad es posible en el addon de ZX-Uno Ensaimedia 1.0, pero no es usada por el sistema Ensaimedia para la salida de vídeo. Otros cores/experimentos pueden hacer uso de ella.
+(*) Esta capacidad es posible en el addon de ZX-Uno Ensaimedia 1.0, pero no es usada por el sistema Ensaimedia para la salida de vídeo. Otros cores/experimentos pueden hacer uso de ella. Para conseguir dirección de datos desde el host a la FPGA en ensaimedia 1.0 se debe cambiar el "solder jumper" J8 a GND (pin 1 de J8). Para uso de ensaimedia debe estar a 3V3 (pin 3 de J8) El pin del FX2 en concreto es ADDR1: Dirección específica del FX2LP (número de endpoint). Es decir, este bit debe valer 1 para dirección de transmisión del ZX-Uno al host, y 0 para la dirección contraria.
+
 
 ## Interfaz serie
 
