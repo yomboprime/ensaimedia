@@ -5,6 +5,19 @@ Ensaimedia permite ver la salida de vídeo de un ZX-Uno o otra FPGA en un ordena
 
 El desarrollo de este addon ha sido posible gracias a la información y software de Wolfgang Wieser sobre el chip Cypress FX2 [en este sitio web.](https://www.triplespark.net/elec/periph/USB-FX2)
 
+# Índice
+
+En este README:
+- [Guía de usuario](https://github.com/yomboprime/ensaimedia#guia-de-usuario-de-ensaimedia)
+- [Documentación del protocolo](https://github.com/yomboprime/ensaimedia#documentaci%C3%B3n-ensaimedia)
+
+En este repositorio:
+- [Binarios de los cores](https://github.com/yomboprime/ensaimedia/tree/master/cores/)
+- [Código del servidor](https://github.com/yomboprime/ensaimedia/blob/master/server.js)
+- [Código del cliente](https://github.com/yomboprime/ensaimedia/blob/master/client/src/client.js)
+
+
+
 # Guia de usuario de Ensaimedia
 
 ## Requisitos en el ZX-Uno
