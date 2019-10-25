@@ -1114,4 +1114,6 @@ Connection ~ 5300 1100
 Wire Wire Line
 	5000 1100 4650 1100
 Connection ~ 5000 1100
+Text Notes 8700 3450 0    50   ~ 0
+DIRection:\n3V3 = FPGA --> USB\nGND = USB --> FPGA
 $EndSCHEMATC
