@@ -135,8 +135,8 @@ Tras finalizar la sesión de Ensaimedia hay que postprocesar los datos raw para 
 
 - Abre un terminal de consola en la carpeta de Ensaimedia
 - Ejecuta la orden `node convertCapture.js <carpeta> ni FPS`, donde:
-	- "<carpeta>" es el nombre de la subcarpeta bajo `savedSessions`, sin barras.
-	- "ni" Significa "not interlazed". Pon `i` en su lugar si quieres que se mezclen fotogramas dos a dos para desentrelazar el vídeo (el vídeo de salida tendrá la mitad de FPS)
+	- `<carpeta>` es el nombre de la subcarpeta bajo `savedSessions`, sin barras.
+	- `ni` Significa "not interlazed". Pon `i` en su lugar si quieres que se mezclen fotogramas dos a dos para desentrelazar el vídeo (el vídeo de salida tendrá la mitad de FPS)
 	- FPS son los FPS originales del vídeo, 50 para el core de  ZX Spectrum. Puede contener decimales. El valor es independiente de si seleccionas entrelazado o no.
 
 Este proceso convierte el vídeo raw a imágenes `.png` que ocupan otro tanto, y después llama al programa `ffmpeg` para crear el vídeo webm. En todo momento se muestra el estado de la conversión.
