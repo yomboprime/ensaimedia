@@ -13,6 +13,8 @@ En este README:
 
 En este repositorio:
 - [Binarios de los cores](https://github.com/yomboprime/ensaimedia/tree/master/cores/)
+- [Esquemático y PCB (en formato Kicad)](https://github.com/yomboprime/ensaimedia/tree/master/ensaimediaBoard)
+- [Esquemático en formato PDF](https://github.com/yomboprime/ensaimedia/tree/master/ensaimediaBoard)
 - [Código del servidor](https://github.com/yomboprime/ensaimedia/blob/master/server.js)
 - [Código del cliente](https://github.com/yomboprime/ensaimedia/blob/master/client/src/client.js)
 
