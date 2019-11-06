@@ -194,6 +194,8 @@ Esto permite:
 - Virtualizar completamente el ZX-Uno y hacerlo disponible a clientes web, cada uno con sus periféricos y recepción de vídeo y audio.
 - Capturar a disco la sesión de vídeo y audio.
 
+Las salidas de vídeo nativas así como los periféricos nativos del ZX-Uno se pueden usar a la vez que Ensaimedia, o bien se pueden dejar desconectados.
+
 # Interfaz física de Ensaimedia
 
 ## Interfaz de vídeo
